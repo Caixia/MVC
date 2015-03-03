@@ -1,0 +1,60 @@
+/* @group Base */
+/* 在表格中checkbox选中后的样式 */
+.js-checkboxchecked-table {
+  color: rgb(26, 167, 84);
+}
+/* 在表格中checkbox选中后的样式 input的样式 */
+.js-checkboxchecked-table input,
+.js-checkboxchecked-table option {
+  color: rgb(26, 167, 84);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(196, 204, 206);
+}
+
+
+.js-alert-title {
+  padding-left: 15%;
+  color: #666666;
+  text-shadow: 0 0 1px #b2b2b2;
+}
+
+.js-alert-title h4 {
+  font-size: 30px;
+  color: #24ab5c;
+  text-shadow: 0 0 1px #b2b2b2;
+}
+
+.js-reportview {
+  border-top: solid 8px #d2dade;
+  
+}
+
+#progress_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-height: 232px;
+	min-width: 500px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: transparent;
+	color: #666;
+	max-height:600px;
+	overflow:auto;
+}
+
+.js-datepicker {
+    background:url(../img/calender.png) 100% no-repeat;
+}
+
+.input-group-addon + .js-datepicker {
+  border-right: none;
+}
+
+#js-boxscroll {
+ padding: 0;
+ width: 100%;
+ border: 0;
+ overflow: auto;
+ position: relative;
+ top: 0;
+ left: 0;
+}

@@ -1,0 +1,56 @@
+﻿/*外边框*/
+.b-m-mpanel {
+	background: #FFF;
+	border: 1px solid #B3BCC6;
+	padding: 10px 0;
+	position: absolute;
+	z-index: 99997;
+	left:0px;
+	top:0px;
+	color: #4C6379;
+}
+.b-m-split {
+	height: 6px;
+	background: #e1e8ea;
+	font-size: 0px;
+	margin: 0 2px;
+}
+.b-m-item, .b-m-idisable
+{
+    padding: 8px 20px;
+    margin: 2px 2px 2px 0;
+    cursor: normal;
+    line-height:100%;
+}
+.b-m-idisable
+{
+    color:#808080;
+}
+.b-m-ibody, .b-m-arrow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+.b-m-arrow {
+	background: url(../image/flexigrid_blue/m_arrow.gif) right  no-repeat;	
+}
+.b-m-idisable .b-m-arrow
+{
+    background:none;
+}
+.b-m-item img, .b-m-ifocus img, .b-m-idisable img {
+	margin-right: 8px;
+}
+/*鼠标点上去的border颜色*/
+.b-m-ifocus {
+	background-color: #24AB5C;	
+	padding: 8px 20px;
+    margin: 2px 0;
+    cursor: hand;
+    cursor: pointer; 
+    line-height:100%;
+    color: #FFF;
+}
+.b-m-idisable img {
+	visibility:hidden;
+}

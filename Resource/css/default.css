@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* 首页样式 */
+.nav-span11 {
+  height: 349px;
+  background-image:url(../img/index-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.nav-sider {
+  height: 349px;
+  background-image:url(../img/index-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.index-header {
+  margin-left: 111px;
+  margin-top: 20%;
+  height: 233px;
+  background-image:url(../img/index-headpic.png);
+  background-repeat: no-repeat;
+}
+.index-font-position {
+  margin-top: 23.2%;
+}
+
+blockquote small a,
+blockquote small a:hover {
+  display: block;
+  line-height: 18px;
+  color: #9faab3;
+}

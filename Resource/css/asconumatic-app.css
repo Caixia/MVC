@@ -1,0 +1,315 @@
+/* @group Base */
+/* 控件AspNetPager分页控件样式 */
+/* 类paginator整体的外围样式 */
+.paginator
+{
+  padding: 0 29px 5px 13px;
+  margin: 0px;
+  font-size: 12px;
+  color: rgb(165, 177, 188);  
+}
+
+.paginator a, .paginator a:visited, .paginator .cpb, .paginator a:hover
+{
+	padding: 5px 8px 4px 10px;
+	margin-right: 5px;
+    height: 16px;
+	min-width: 10px;    
+    font-size: 12px;
+    line-height: 16px;   
+    text-align: right;
+    white-space: nowrap;
+}
+.paginator a
+{ 
+  color: #728498;
+  text-decoration: none;
+  border-top: solid 1px #e3eaeb;
+  border-right: solid 1px #e3eaeb;  
+  border-bottom: solid 1px #c5d3d6;
+  border-left: solid 1px #e3eaeb; 
+  cursor: pointer;  
+}
+
+.paginator a:hover
+{
+  font-weight: bold;
+  color: rgb(255, 255 ,255);
+  background-color: rgb(36, 171 ,92);
+  text-decoration: none;
+}
+
+.paginator a:visited
+{
+  font-weight: bold;
+  color: rgb(255, 255 ,255);
+  background-color: rgb(36, 171 ,92);
+  text-decoration: none;
+}
+.paginator .cpb
+{
+  font-weight: bold;
+  color: rgb(255, 255 ,255);
+  background-color: rgb(36, 171 ,92);
+}
+
+
+
+
+/* tab */
+.box{
+  
+}
+
+.box-header{
+  border-bottom: 1px solid #e3eaeb;
+  height:33px;
+  min-height:33px;
+  cursor:move;
+  font-weight:bold;
+  font-size:12px;
+  background-color: #f1f5f5;
+}
+
+.box-header span{
+  clear:none;
+  float:left;
+  padding-left: 18px;
+  width:auto;
+  font-size:15px;
+  line-height:25px;
+}
+.box-header h3{
+  width:auto;
+  float:left;
+  line-height:25px;
+  font-size:13px;
+  clear:none;
+}
+.box-header h2 > i{
+  margin-top:1px;
+}
+.box-header ul li span 
+{
+  padding-left: 0;
+  width:auto;
+  font-size:12px;
+  line-height:18px;
+}
+/* 页面头部的tab */
+.box-header-lg{
+  height: 56px;
+  min-height: 55px;
+  font-weight: bold;
+  border-bottom: 1px solid #d4dee0;
+  background-color: #fff;
+}
+.box-content .row-fluid {
+  margin-bottom: 8px;
+}
+.btn-tab {  
+  display: inline-block;
+  padding: 10px 14px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+}
+.btn-header-tab{
+  height:55px;
+  font-size:16px;
+}
+.btn-header-tab:hover,
+.btn-header-tab:focus,
+.btn-header-tab:active,
+.btn-header-tab.active {
+  height: 55px;
+  color: #24ab5b;
+  font-weight: bold;
+  border-bottom-width: 4px;
+  border-bottom-color: #24ab5c;
+}
+.btn-header-tab:active,
+.btn-header-tab.active {
+  background-image: none;
+}
+
+
+
+.box-icon{
+  float :right;
+}
+.box-icon a{
+  clear :none;
+  float :left;
+  margin:0 2px;
+  height: 18px;
+  width:5px;
+  margin-top: -1px;
+}
+.box-icon a i{
+  margin-left:-4.5px;
+}
+
+.btn-round{
+  padding-top:4px;
+  font-size:12px;
+  color: #b1bcc6;
+}
+.btn-round:hover,
+.btn-round:focus,
+.btn-round:active,
+.btn-round.active {
+  color: #4c637a;
+  outline: none;
+}
+.btn-round:active,
+.btn-round.active {
+  background-image: none;
+}
+
+/* datetime */
+.datepicker input {
+  border-right: none;
+}
+.datepicker span {
+  display: inline-table;
+  padding: 3px 4px 3px 0;
+  height: 18px;
+  line-height: 18px;
+  background-color: rgb(247, 249, 249);
+  border: 1px solid #e0e7e9;
+  border-left: none;
+  vertical-align: middle;  
+}
+.datepicker i {
+  display: inline; 
+  font-size: 12px;  
+  color: #96d5b1; 
+  vertical-align: middle; 
+}
+
+.datepickerboth > [class*="span"] {
+}
+.datepickerboth > [class*="span"]:first-child {
+}
+
+/* 靠右排列，并居右30 */
+.text-right-padding30 {
+  padding-right: 3.5%;
+}
+/*三等份，4，7分，合并两列*/
+.span47 {
+    width:79.1%;
+}
+/*三等份，4，7分，合并三列*/
+.span471 {
+    width:11.11111%;
+}
+.span472 {
+    width:86.11111%;
+}
+/*取得两等分，4，7分正行的比例*/
+.span958{
+    width:95.8333%;
+}
+.marginright0 {
+    margin-right:0px;
+}
+.overflowauto {
+    overflow:auto;
+}
+
+/*二等分，Textbox和点点按钮组合中的Textbox宽度*/
+.span2T {
+    width:85%;
+    *width:85%;
+}
+/*二等分，Textbox和点点按钮组合中的点点按钮宽度*/
+.span2D {
+    width:15%;
+    *width:15%;
+    
+}
+/*二等分，Textbox中的Label宽度*/
+.span2L {
+    width:41.1765%;
+}
+/*二等分，Textbox中的Text宽度*/
+.span2TT {
+    width:58.8235%;
+}
+.paddingRight20 {
+  padding-right:20px;
+}
+.paddingLeft20
+{
+        padding-left:20px;
+}
+.span24{
+    width:35%;
+    *width:35%;
+}
+.span25{
+    width:65%;
+    *width:65%;
+}
+.span26{
+    width:30%;
+    *width:30%;
+}
+.div_stroll {
+    overflow:auto;
+    width:100%;
+    position:relative;    
+}
+.fontRed {
+    color:Red;
+}
+.noprint {
+    display:none;
+    portrait:false;
+}
+.itemadd {
+    text-transform:uppercase;
+    border-style:none;
+    width:100%;
+}
+
+.height600 {
+    height:600px;
+}
+
+.height400 {
+    height:400px;
+}
+
+.span-addon-rightiput {
+  width: 11.9%
+}
+
+    
+.gvDisplay
+{
+    display:none;
+}
+
+/* 用于3个input,第两个input之前有个span的说明文字 */
+.span-addon-rightinput3 {
+  width: 11.9%
+}
+
+.height500 {
+    height:500px;
+}

@@ -1,0 +1,11 @@
+﻿#progress_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-height: 232px;
+	min-width: 500px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: transparent;
+	color: #666;
+	max-height:600px;
+	overflow:auto;
+}

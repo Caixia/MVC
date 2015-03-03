@@ -1,0 +1,32 @@
+﻿@model WebUI.Models.LeftMenuModels
+@{
+    WebUI.Models.LeftMenuModels model = new WebUI.Models.LeftMenuModels();
+    var parentList = model.nav.Where(m => m.parent == "0");
+    int count = 0;    
+}
+@foreach (var p in parentList)
+{
+    count = count + 1;
+    var subList = Model.nav.Where(s => s.parent == p.MenuLevel);
+    if (parentList.Count() > 0 && subList.Count() > 0)
+    {
+        <!-- show parentList -->
+        <div class="menu-first"><a href="@p.Id" class="nav-header menu-first expandable">
+        <span><i class="@p.MenuIcon"></i>@p.value</span></a></div>
+    }else{
+        <div class="menu-first"><a href="@p.webaddress?id=@p.Id" class="nav-header menu-first expandable">
+        <span><i class="@p.MenuIcon"></i>@p.value</span></a></div>
+    }
+    <ul id="@p.Id" class="nav nav-list categoryitems menu-second">
+        @if(subList.Count() > 0){
+            foreach (var sub in subList)
+            {                
+                var subLinkID = "m" + @sub.Id;
+                <li><a id="@subLinkID" href="@sub.webaddress?id=@sub.Id&index=@count"><i class="fa fa-play fa-sm"></i>@sub.value</a></li>               
+            }
+        }else{
+            var linkId = "m" + @p.Id;
+            <li><a id="@linkId" href="@p.webaddress?id=@p.Id&index=@count"><i class="fa fa-play fa-sm"></i>@p.value</a></li>
+        }
+    </ul>
+}
