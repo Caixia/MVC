@@ -8,7 +8,7 @@ using WebUI.Models;
 
 namespace WebUI.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
@@ -16,7 +16,8 @@ namespace WebUI.Controllers
 
             return View();
         }
-         [ChildActionOnly]
+
+        [ChildActionOnly]
         public ActionResult LeftMenu()
         {
             LeftMenuModels model = new LeftMenuModels();
@@ -25,16 +26,13 @@ namespace WebUI.Controllers
 
         public ActionResult About()
         {
-  
             ViewBag.Message = "Your app description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }

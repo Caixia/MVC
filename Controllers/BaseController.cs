@@ -5,11 +5,25 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using WebUI.Model;
 
 namespace WebUI.Controllers
 {
     public abstract class BaseController : Controller
     {
+        protected override void OnActionExecuted(ActionExecutedContext filterContext)
+        {
+            var menu = new List<NavModel>
+                           {
+                               new NavModel{value = "Home", valuepath = "/Home", MenuIcon = "home icon"},
+                               new NavModel{value = "Manufactory", valuepath = "/Manufactory", MenuIcon = "cubes icon"},
+                               new NavModel{value = "Logistic", valuepath = "/Logistic", MenuIcon = "truck icon"},
+                               new NavModel{value = "Inventory", valuepath = "/Inventory", MenuIcon = "line-chart icon"},
+                           }.AsEnumerable();
+            ViewData["menu"] = menu;
+            base.OnActionExecuted(filterContext);
+        }
+
         protected string LoadFile(string fileName)
         {
             string filepath = Server.MapPath(fileName);

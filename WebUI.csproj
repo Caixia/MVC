@@ -161,6 +161,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Inventory\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Inventory\InventoryAreaRegistration.cs" />
+    <Compile Include="Areas\Logistic\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Logistic\LogisticAreaRegistration.cs" />
+    <Compile Include="Areas\Manufactory\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Manufactory\Controllers\MaterialController.cs" />
+    <Compile Include="Areas\Manufactory\ManufactoryAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -227,12 +234,35 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\basic\assets\fonts\icons.svg" />
+    <Content Include="Content\themes\default\assets\fonts\icons.svg" />
+    <Content Include="Content\themes\default\assets\images\flags.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\semantic.min.css" />
+    <Content Include="Resource\js\semantic.min.js" />
     <Content Include="Resource\fonts\fontawesome-webfont.eot" />
     <Content Include="Resource\fonts\fontawesome-webfont.ttf" />
     <Content Include="Resource\fonts\fontawesome-webfont.woff" />
     <Content Include="Resource\fonts\FontAwesome.otf" />
+    <Content Include="Content\themes\default\assets\fonts\icons.eot" />
+    <Content Include="Content\themes\default\assets\fonts\icons.otf" />
+    <Content Include="Content\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="Content\themes\default\assets\fonts\icons.woff" />
+    <Content Include="Content\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="Content\themes\basic\assets\fonts\icons.eot" />
+    <Content Include="Content\themes\basic\assets\fonts\icons.ttf" />
+    <Content Include="Content\themes\basic\assets\fonts\icons.woff" />
+    <Content Include="Areas\Manufactory\Views\Web.config" />
+    <Content Include="Areas\Manufactory\Views\Material\Index.cshtml" />
+    <Content Include="Areas\Logistic\Views\Web.config" />
+    <Content Include="Areas\Inventory\Views\Web.config" />
+    <Content Include="Areas\Manufactory\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Inventory\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Logistic\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Manufactory\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Inventory\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Logistic\Views\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Resource\css\asconumatic-app.css" />
     <Content Include="Resource\css\asconumatic-js.css" />
@@ -293,6 +323,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\semantic.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -334,19 +365,30 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_LeftMenuPartial.cshtml" />
     <Content Include="XMLConfig\DALConfig.config" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Inventory\Models\" />
+    <Folder Include="Areas\Inventory\Views\Shared\" />
+    <Folder Include="Areas\Logistic\Models\" />
+    <Folder Include="Areas\Logistic\Views\Shared\" />
+    <Folder Include="Areas\Manufactory\Models\" />
+    <Folder Include="Areas\Manufactory\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebUI.BLL\WebUI.BLL.csproj">
+    <ProjectReference Include="..\Oceania\WebUI.BLL\WebUI.BLL.csproj">
       <Project>{2ccfd212-4fe6-4c82-b8af-d1ca8c96d6c1}</Project>
       <Name>WebUI.BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WebUI.Model\WebUI.Model.csproj">
+    <ProjectReference Include="..\Oceania\WebUI.DAL\WebUI.DAL.csproj">
+      <Project>{4b9299d0-14ca-434a-8460-dd44fa1ed2e9}</Project>
+      <Name>WebUI.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oceania\WebUI.Model\WebUI.Model.csproj">
       <Project>{63ae99de-dddc-462e-bcdf-ed2dee46c904}</Project>
       <Name>WebUI.Model</Name>
     </ProjectReference>

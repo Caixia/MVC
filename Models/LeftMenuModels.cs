@@ -18,10 +18,11 @@ namespace WebUI.Models
                 string UserName = string.Empty;
                 string Domain = string.Empty;
                 string[] UserNameArry = HttpContext.Current.Request.ServerVariables["LOGON_USER"].Split('\\');
-                UserName = UserNameArry[1];
-                Domain = UserNameArry[0];
-                model.CreateUserId = UserName;
-                return bll.getNavList(model);
+             //   UserName = UserNameArry[1];
+              //  Domain = UserNameArry[0];
+             //   model.CreateUserId = UserName;
+                return new List<NavModel>{new NavModel{parent = "0", MenuLevel = "0", Id = "xxxxx"}, new NavModel{parent = "0", MenuLevel = "0", Id="bbbbb"}};
+                //return bll.getNavList(model);
             }
         }
        

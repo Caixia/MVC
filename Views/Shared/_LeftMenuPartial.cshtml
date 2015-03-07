@@ -1,13 +1,13 @@
 ﻿@model WebUI.Models.LeftMenuModels
 @{
     WebUI.Models.LeftMenuModels model = new WebUI.Models.LeftMenuModels();
-    var parentList = model.nav.Where(m => m.parent == "0");
+    var parentList = model.nav.Where(m => m.parent == "0").ToList();
     int count = 0;    
 }
 @foreach (var p in parentList)
 {
     count = count + 1;
-    var subList = Model.nav.Where(s => s.parent == p.MenuLevel);
+    var subList = parentList;
     if (parentList.Count() > 0 && subList.Count() > 0)
     {
         <!-- show parentList -->
